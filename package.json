@@ -4,6 +4,8 @@
   "description": "curso de javascript com tdd na prática",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,8 @@
     "library"
   ],
   "author": "Paula Bastos <paulajbastos@gmail.com> (http://www.paulajbastos.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.8.1"
+  }
 }
